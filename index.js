@@ -8,6 +8,10 @@ app.get("/", function(req, res){
    res.render("index.html"); 
 });
 
+app.get("*", function(req, res){
+   res.send("Sorry, Page not found!"); 
+});
+
 app.get("/mercury", function(req, res){
    res.render("mercury.html"); 
 });
