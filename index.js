@@ -26,9 +26,9 @@ app.get("/earth", function(req, res){
    res.render("earth.html"); 
 });
 
-app.get("*", function(req, res){
-   res.send("Sorry, Page not found!"); 
-});
+// app.get("*", function(req, res){
+//    res.send("Sorry, Page not found!"); 
+// });
 
 //Listener
 app.listen(process.env.PORT, process.env.IP, function(){
