@@ -12,6 +12,10 @@ app.get("/mercury", function(req, res){
    res.render("mercury.html"); 
 });
 
+app.get("/uranus", function(req, res){
+   res.render("uranus.html"); 
+});
+
 app.get("/venus", function(req, res){
    res.render("venus.html"); 
 });
