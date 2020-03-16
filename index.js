@@ -8,9 +8,7 @@ app.get("/", function(req, res){
    res.render("index.html"); 
 });
 
-app.get("*", function(req, res){
-   res.send("Sorry, Page not found!"); 
-});
+
 
 app.get("/mercury", function(req, res){
    res.render("mercury.html"); 
@@ -26,6 +24,10 @@ app.get("/venus", function(req, res){
 
 app.get("/earth", function(req, res){
    res.render("earth.html"); 
+});
+
+app.get("*", function(req, res){
+   res.send("Sorry, Page not found!"); 
 });
 
 //Listener
